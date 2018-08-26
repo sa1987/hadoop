@@ -111,7 +111,7 @@ echo $HADOOP_HOME
 echo $JAVA_HOME
 }
 
-cat >> $Install_Dir/hadoop/etc/hadoop/core-site.xml << EOL
+cat > $Install_Dir/hadoop/etc/hadoop/core-site.xml << EOL
 
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
@@ -125,7 +125,7 @@ EOL
 
 sed -i "s/localhost/$new_hostname/g"  $Install_Dir/hadoop/etc/hadoop/core-site.xml
 
-cat >> $Install_Dir/hadoop/etc/hadoop/hdfs-site.xml << EOL
+cat > $Install_Dir/hadoop/etc/hadoop/hdfs-site.xml << EOL
 
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
