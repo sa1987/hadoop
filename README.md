@@ -1,0 +1,2 @@
+# hadoop
+hadoop installation script
